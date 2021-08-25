@@ -43,11 +43,12 @@ One could click the "Redo" button if he/she wants to cancel the update before cl
 The commit message would be copied into your clipboard when you click the "Copy Commit Message" buttoon.
 
 ### Delete
-One could delete the commit after submitting the commit by clicking the "Delete" button. Notice that there is no way to restore the deleted commit before the trash functionality is supported.
+Once you have submitted the commit, you could delete the commit data on Cake Server by clicking the "Delete" button. Notice that there is no way to restore the deleted commit before the trash functionality is supported.
 
 ## Todo
 - Add project functionality
 - Add trash functionality
+- Add offline support by implementing a Progressive Web App
 - Ｍake revisions to the UI style
 
 <!-- # Getting Started with Create React App
