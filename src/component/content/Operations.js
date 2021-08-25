@@ -3,10 +3,16 @@ import { useEffect } from 'react';
 
 const copyCommitMessageName = 'Copy Commit Message';
 
+const copyCommitMessageBtnId = 'copyCommitMessageBtn';
+const copyCommitMessageBtnSelector = `#${copyCommitMessageBtnId}`;
+
+const copyCommitMessageTargetId = 'commitMessageText';
+const copyCommitMessageTargetSelector = `#${copyCommitMessageTargetId}`;
+
 function Operations({ operations }) {
 
     useEffect(() => {
-        const clipboard = new ClipboardJS('#copyCommitMessageBtn');
+        const clipboard = new ClipboardJS(copyCommitMessageBtnSelector);
 
         clipboard.on('success', function(e) {
             console.info('Action:', e.action);
@@ -26,7 +32,7 @@ function Operations({ operations }) {
     return (
         operations.map((operation, i) => { 
             if (operation.name === copyCommitMessageName) {
-                return <button id="copyCommitMessageBtn" data-clipboard-target="#commitMessageText" key={i} className="w3-button w3-light-grey" onClick={operation.operate}>{operation.name}</button>;
+                return <button id={copyCommitMessageBtnId} data-clipboard-target={copyCommitMessageTargetSelector} key={i} className="w3-button w3-light-grey" onClick={operation.operate}>{operation.name}</button>;
             }
 
             return <button key={i} className="w3-button w3-light-grey" onClick={operation.operate}>{operation.name}</button>;
@@ -65,3 +71,4 @@ const createOperations = (isNewCommit) => ({ saveCommit, copyCommitMessage, dele
 };
 
 export { Operations, createOperations };
+export { copyCommitMessageTargetId };
