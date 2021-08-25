@@ -48,6 +48,7 @@ One could delete the commit after submitting the commit by clicking the "Delete"
 ## Todo
 - Add project functionality
 - Add trash functionality
+- Ｍake revisions to the UI style
 
 <!-- # Getting Started with Create React App
 
