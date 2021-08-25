@@ -1,9 +1,9 @@
 const getData = () => {
-    return JSON.parse(localStorage.getItem('commits') || '[]');
+    return JSON.parse(localStorage.getItem('cakeserver.commits') || '[]');
 };
 
 const saveData = (commits) => {
-    localStorage.setItem('commits', JSON.stringify(commits));
+    localStorage.setItem('cakeserver.commits', JSON.stringify(commits));
 };
 
 class LocalStorageDataSource {
