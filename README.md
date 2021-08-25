@@ -47,6 +47,7 @@ Once you have submitted the commit, you could delete the commit data on Cake Ser
 
 ## Todo
 - Fix sidebar display when device width is lower than 990px
+- Add multi line support for commit message
 - Add project functionality
 - Add trash functionality
 - Add offline support by implementing a Progressive Web App
