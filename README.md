@@ -11,7 +11,45 @@ It is not a server but a web app helps you to split you task into peices of cake
 
 GitHub Pages: https://chinhung.github.io/cakeserver/
 
-# Getting Started with Create React App
+## Introduction
+
+> Writing commit messages before starting to code.
+> 
+> *- Git Essentials*
+
+Cake Server is inspried by the book [*Git Essentials*](https://www.packtpub.com/product/git-essentials/9781785287909). It is a best practice in programming that we could write down the commit messages before we start to code. By doing such kind of prior preparation, one could focus on what matters during the coding session.
+
+One could write down the commit messages on Cake Server. The following functionalities are supported:
+- New Commit
+- Save
+- Redo
+- Copy Commit Message
+- Delete
+
+Cake Server uses `localStorage` to store the data.
+
+## How to use
+
+### New Commit
+One could click the "New Commit" button in the sidebar to create a new commit. After entering the commit message and note, please click the "Save" button to save the commit and which would be present in the "Commits" section in the sidebar.
+
+### Save
+By clicking a particular commit in the "Commits" section in the sidebar, one could edit the commit message and note of that commit. Once you have done, please click the "Save" button to save the commit or the update would lose.
+
+### Redo
+One could click the "Redo" button if he/she wants to cancel the update before clicking the "Save" button.
+
+### Copy Commit Message
+The commit message would be copied into your clipboard when you click the "Copy Commit Message" buttoon.
+
+### Delete
+One could delete the commit after submitting the commit by clicking the "Delete" button. Notice that there is no way to restore the deleted commit before the trash functionality is supported.
+
+## Todo
+- Add project functionality
+- Add trash functionality
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -80,4 +118,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
