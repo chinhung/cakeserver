@@ -1,5 +1,7 @@
 # Cake Server
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/chinhung/cakeserver/blob/master/LICENSE)
+
 It is not a server but a web app helps you to split you task into peices of cake!
 
 ![](https://images.unsplash.com/photo-1492093610675-98e3102999c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80)
