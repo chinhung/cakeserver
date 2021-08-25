@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cakeserver/static/css/main.a617e044.chunk.css",
-    "main.js": "/cakeserver/static/js/main.dd055132.chunk.js",
-    "main.js.map": "/cakeserver/static/js/main.dd055132.chunk.js.map",
+    "main.js": "/cakeserver/static/js/main.cb53a46a.chunk.js",
+    "main.js.map": "/cakeserver/static/js/main.cb53a46a.chunk.js.map",
     "runtime-main.js": "/cakeserver/static/js/runtime-main.3a447d31.js",
     "runtime-main.js.map": "/cakeserver/static/js/runtime-main.3a447d31.js.map",
     "static/js/2.afc5ac35.chunk.js": "/cakeserver/static/js/2.afc5ac35.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3a447d31.js",
     "static/js/2.afc5ac35.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.dd055132.chunk.js"
+    "static/js/main.cb53a46a.chunk.js"
   ]
 }
