@@ -46,6 +46,7 @@ The commit message would be copied into your clipboard when you click the "Copy 
 Once you have submitted the commit, you could delete the commit data on Cake Server by clicking the "Delete" button. Notice that there is no way to restore the deleted commit before the trash functionality is supported.
 
 ## Todo
+- Fix sidebar display when device width is lower than 990px
 - Add project functionality
 - Add trash functionality
 - Add offline support by implementing a Progressive Web App
