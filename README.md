@@ -28,7 +28,7 @@ One could write down the commit messages on Cake Server. The following functiona
 
 Cake Server uses `localStorage` to store the data.
 
-## How to use
+## How to Use
 
 ### New Commit
 One could click the "New Commit" button in the sidebar to create a new commit. After entering the commit message and note, please click the "Save" button to save the commit and which would be present in the "Commits" section in the sidebar.
