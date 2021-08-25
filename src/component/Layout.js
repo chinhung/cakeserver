@@ -11,7 +11,7 @@ function SidebarContainer(props) {
 function ContentContainer(props) {
     return (
         <div className="w3-main" style={{ marginLeft: sidebarWidth }}>
-            <div id="Borge" className="w3-container person">
+            <div className="w3-container">
             <br></br>
                 { props.children }
             </div>
