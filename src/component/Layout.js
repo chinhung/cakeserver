@@ -2,7 +2,7 @@ const sidebarWidth = '320px';
 
 function SidebarContainer(props) {
     return (
-        <nav className="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style={{ zIndex: 3, width: sidebarWidth }} id="mySidebar">
+        <nav className="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style={{ zIndex: 3, width: sidebarWidth }}>
             { props.children }
         </nav>
     );
