@@ -46,6 +46,15 @@ The commit message would be copied into your clipboard when you click the "Copy 
 ### Delete
 Once you have submitted the commit, you could delete the commit data on Cake Server by clicking the "Delete" button. Notice that there is no way to restore the deleted commit before the trash functionality is supported.
 
+## Design Concepts
+
+- Separate the UI components and the data layer
+  - the two parts are binded together by `operationFunctions`
+- Dependency injections implemented by currying technique
+  - `createOperations`, `loadCommits`, `saveCommit`, `deleteCommit`
+- Adapt functions by currying technique
+  - `isNewCommit`
+
 ## Todo
 - Fix sidebar display when device width is lower than 990px
 - Add multi line support for commit message
