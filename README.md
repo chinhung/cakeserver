@@ -17,9 +17,8 @@ GitHub Pages: https://chinhung.github.io/cakeserver/
 > 
 > *- Git Essentials*
 
-Cake Server is inspried by the book [*Git Essentials*](https://www.oreilly.com/library/view/git-essentials/9781785287909/). It is a best practice in programming that we could write down the commit messages before we start to code. By doing such kind of prior preparation, one could focus on what matters during the coding session.
+Cake Server is inspried by the book [*Git Essentials*](https://www.oreilly.com/library/view/git-essentials/9781785287909/). It is a best practice in programming that we could write down the commit messages before we start to code. By doing such kind of prior preparation, one could focus on what matters during the coding session. Besides, splitting a task into several meaningful subtasks helps you to organize your working hours. Cake Server helps you to split a task into several meaningful commits, the following functionalities are supported:
 
-One could write down the commit messages on Cake Server. The following functionalities are supported:
 - New Commit
 - Save
 - Redo
