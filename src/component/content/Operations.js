@@ -32,10 +32,10 @@ function Operations({ operations }) {
     return (
         operations.map((operation, i) => { 
             if (operation.name === copyCommitMessageName) {
-                return <button id={copyCommitMessageBtnId} data-clipboard-target={copyCommitMessageTargetSelector} key={i} className="w3-button w3-light-grey" onClick={operation.operate}>{operation.name}</button>;
+                return <button id={copyCommitMessageBtnId} data-clipboard-target={copyCommitMessageTargetSelector} key={i} className={operation.className} onClick={operation.operate}>{operation.name}</button>;
             }
 
-            return <button key={i} className="w3-button w3-light-grey" onClick={operation.operate}>{operation.name}</button>;
+            return <button key={i} className={operation.className} onClick={operation.operate}>{operation.name}</button>;
         })
     );
 }
@@ -45,6 +45,7 @@ const createOperations = (isNewCommit) => ({ saveCommit, copyCommitMessage, dele
         return [
             {
                 name: 'Save',
+                className: 'w3-button w3-light-grey e2e-save',
                 operate: () => saveCommit(commit)
             }
         ];
@@ -53,18 +54,22 @@ const createOperations = (isNewCommit) => ({ saveCommit, copyCommitMessage, dele
     return [
         {
             name: 'Save',
+            className: 'w3-button w3-light-grey e2e-save',
             operate: () => saveCommit(commit)
         },
         {
             name: 'Redo',
+            className: 'w3-button w3-light-grey e2e-redo',
             operate: () => redoCommit(commit)
         },
         {
             name: copyCommitMessageName,
+            className: 'w3-button w3-light-grey e2e-copy-commit-message',
             operate: () => copyCommitMessage(commit.message)
         },
         {
             name: 'Delete',
+            className: 'w3-button w3-light-grey e2e-delete',
             operate: () => deleteCommit(commit)
         }
     ];
