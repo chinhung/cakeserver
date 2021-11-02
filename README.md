@@ -22,7 +22,7 @@ Cake Server is inspried by the book [*Git Essentials*](https://www.oreilly.com/l
 Cake Server helps you to split a task into several meaningful commits, the following functionalities are supported:
 
 - New Commit
-- Save
+- Update
 - Redo
 - Copy Commit Message
 - Delete
@@ -34,7 +34,7 @@ Cake Server uses `localStorage` to store the data.
 ### New Commit
 One could click the "New Commit" button in the sidebar to create a new commit. After entering the commit message and note, please click the "Save" button to save the commit and which would be present in the "Commits" section in the sidebar.
 
-### Save
+### Update
 By clicking a particular commit in the "Commits" section in the sidebar, one could edit the commit message and note of that commit. Once you have done, please click the "Save" button to save the commit or the update would lose.
 
 ### Redo
