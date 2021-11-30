@@ -3,11 +3,10 @@ import { useState, useEffect } from  'react';
 import { SidebarContainer, ContentContainer } from './component/Layout';
 import { GitHub, NewCommit, CakeServerLogo, Commits } from './component/sidebar';
 import { Message, Note, Operations, createOperations } from './component/content';
-import { newCommit, isNewCommit, loadCommits, saveCommit, deleteCommit, InMemeryDataSource, LocalStorageDataSource } from './data';
+import { newCommit, isNewCommit, loadCommits, saveCommit, deleteCommit } from './data';
 
-function App() {
+function App({ dataSource }) {
 
-    const [ dataSource ] = useState(new LocalStorageDataSource());
     const [ commits, setCommits ] = useState([]);
     const [ currentCommit, setCurrentCommit ] = useState(newCommit());
 
