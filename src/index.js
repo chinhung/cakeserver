@@ -4,12 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { InMemeryDataSource, LocalStorageDataSource } from './data';
+import { newCommit, isNewCommit, loadCommits, saveCommit, deleteCommit, InMemeryDataSource, LocalStorageDataSource } from './data';
 
+const dataSource = new LocalStorageDataSource();
+
+const inject = {
+  newCommit,
+  isNewCommit,
+  loadCommits: loadCommits(dataSource),
+  saveCommit: saveCommit(dataSource),
+  deleteCommit: deleteCommit(dataSource),
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App dataSource={new LocalStorageDataSource()}/>
+    <App inject={inject}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -3,22 +3,23 @@ import { useState, useEffect } from  'react';
 import { SidebarContainer, ContentContainer } from './component/Layout';
 import { GitHub, NewCommit, CakeServerLogo, Commits } from './component/sidebar';
 import { Message, Note, Operations, createOperations } from './component/content';
-import { newCommit, isNewCommit, loadCommits, saveCommit, deleteCommit } from './data';
 
-function App({ dataSource }) {
+function App({ inject }) {
+
+    const { newCommit, isNewCommit, loadCommits, saveCommit, deleteCommit } = inject;
 
     const [ commits, setCommits ] = useState([]);
     const [ currentCommit, setCurrentCommit ] = useState(newCommit());
 
-    const loadData = () => { loadCommits(dataSource)().then(commits => setCommits(commits)) };
+    const loadData = () => { loadCommits().then(commits => setCommits(commits)) };
 
     useEffect(() => {
-        loadCommits(dataSource)().then(commits => setCommits(commits));
+        loadCommits().then(commits => setCommits(commits));
     }, []);
 
     const operationFunctions = {
         saveCommit: (toSaved) => { 
-            saveCommit(dataSource)(toSaved).then(() => { loadData() });
+            saveCommit(toSaved).then(() => { loadData() });
         }, 
         redoCommit: (toRedoed) => {
             setCurrentCommit({ ...commits.filter(commit => commit.id === toRedoed.id)[0] });
@@ -27,7 +28,7 @@ function App({ dataSource }) {
             console.log('copy: ' + message);
         },
         deleteCommit: (toDeleted) => { 
-            deleteCommit(dataSource)(toDeleted).then(() => { 
+            deleteCommit(toDeleted).then(() => { 
                 loadData();
                 setCurrentCommit(newCommit());
             });
