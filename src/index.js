@@ -4,16 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { newCommit, isNewCommit, loadCommits, saveCommit, deleteCommit, InMemeryDataSource, LocalStorageDataSource } from './data';
+import { newCommit, isNewCommit, InMemeryDataSource, LocalStorageDataSource } from './data';
 
 const dataSource = new LocalStorageDataSource();
 
 const inject = {
   newCommit,
   isNewCommit,
-  loadCommits: loadCommits(dataSource),
-  saveCommit: saveCommit(dataSource),
-  deleteCommit: deleteCommit(dataSource),
+  loadCommits: () => dataSource.loadCommits(),
+  saveCommit: (toSaved) => dataSource.saveCommit(toSaved),
+  deleteCommit: (toDeleted) => dataSource.deleteCommit(toDeleted),
 };
 
 ReactDOM.render(
